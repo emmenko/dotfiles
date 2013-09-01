@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install wget with IRI support
+brew install wget --enable-iri
+
+# Install more recent versions of some OS X tools
+# brew tap homebrew/dupes
+# brew install homebrew/dupes/grep
+# brew tap josegonzalez/homebrew-php
+# brew install php55
+
+# Install other useful binaries
+brew install ack
+brew install git
+brew install htop-osx
+brew install jq
+brew install mongodb
+brew install openssl
+brew install rhino
+brew install sbt
+
+# Install bash-completion
+brew install git bash-completion
+
+# Remove outdated versions from the cellar
+brew cleanup

@@ -1,0 +1,39 @@
+# Easier navigation
+alias ..="cd .."
+
+# Shortcuts
+alias s="subl ."
+alias o="open"
+alias oo="open ."
+alias g="git"
+alias h="history"
+alias top='top -o cpu'
+alias jsonpretty='python -mjson.tool'
+
+# List all files colorized in long format, including dot files
+alias ll='ls -alFhG'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
+alias myip='ifconfig | grep "inet " | cut -d" " -f 2'
+
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Make Grunt print stack traces by default
+command -v grunt > /dev/null && alias grunt="grunt --stack"
+
+# Git
+alias st='git status'
+alias slog='git shortlog -sn'
+alias reload='source ~/.profile'
+alias lola='git log --graph --decorate --pretty=oneline --abbrev-commit --all'

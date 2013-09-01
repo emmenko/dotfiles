@@ -1,0 +1,14 @@
+[include]
+  	path = ~/.gitconfig.local
+[user]
+	name = Nicola Molinari
+	email = nicola.molinari@commercetools.de
+	user = emmenko
+[branch]
+	autosetuprebase = always
+[push]
+	default = current
+[color]
+	ui = auto
+[diff]
+    renames=true
