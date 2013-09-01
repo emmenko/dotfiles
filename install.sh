@@ -30,7 +30,7 @@ for i in "${dotfiles[@]}"
 do
   :
   echo "Removing symlink $i"
-  rm -rf ~/$i
+  unlink ~/$i
   echo "Symlinking $i"
   ln -sf `pwd`/$i ~/$i
 done
