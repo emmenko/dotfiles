@@ -11,7 +11,7 @@ then
 fi
 
 # Create ssh dir if it doesn't exist
-if [ -f '~/.ssh/' ];
+if [ ! -f '~/.ssh/' ];
 then
   mkdir '~/.ssh/'
   echo "Creating dir ~/.ssh"
@@ -25,10 +25,7 @@ then
 fi
 
 #create the symlinks for all dotfiles
-# declare -a dotfiles=(.vimrc .vim .gitconfig .inputrc .profile .ackrc .gemrc .hgrc .cvsignore .npmrc .ctags .rspec .ssh/config .alias)
-
-#create the symlinks for all dotfiles
-declare -a dotfiles=(.aliases .colors .gitconfig .profile .vimrc)
+declare -a dotfiles=(.aliases .colors .gitconfig .profile .vimrc .vim, .iterm2 .ssh/config)
 for i in "${dotfiles[@]}"
 do
   :
@@ -39,10 +36,6 @@ done
 # echo "Symlinking bin"
 # rm -rf ~/bin
 # ln -sf `pwd`/bin/ ~/bin
-
-echo "Symlinking .iterm2 preferencies"
-mkdir -p ~/.iterm2
-ln -sf `pwd`/.iterm2 ~/.iterm2
 
 echo "Symlinking .sbt/plugins"
 mkdir -p ~/.sbt
