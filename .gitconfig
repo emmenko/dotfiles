@@ -58,6 +58,14 @@
 		column -s'|' -t"
 
 	# Short Forms
+	st = status
 	co = checkout
+	ci = commit
+	ad = commit -a
+	cam = commit -a -m
+	rb = rebase
+	rv = revert
+	pu = pull
+	ps = push
+	mt = mergetool
 	undo = reset HEAD~1
-	am = commit -am
