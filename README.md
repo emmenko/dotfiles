@@ -1,9 +1,7 @@
 dotfiles
 ========
 
-My dotfiles
-
-## Installation
+### Installation
 
 Install package managers
 
@@ -11,10 +9,11 @@ Install package managers
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
-# Node
+# Node (OSX installer http://nodejs.org/download/) or
 brew install node
 ```
 
+Set up system
 ```bash
 # Set up custom OSX preferences, symlink dotfiles
 ./install.sh
