@@ -43,3 +43,7 @@ echo "Symlinking .sbt/plugins"
 mkdir -p ~/.sbt
 rm -rf ~/.sbt/plugins
 ln -sf `pwd`/.sbt/plugins ~/.sbt/plugins
+
+echo "Symlinking sublime preferences" 
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+ln -sf `pwd`/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
