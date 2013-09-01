@@ -1,0 +1,22 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"Backbone.js",
+		"CoffeeScript",
+		"Cucumber",
+		"DashDoc",
+		"Jade",
+		"JavaPropertiesEditor",
+		"LESS",
+		"Package Control",
+		"Play 2.0",
+		"Pretty JSON",
+		"Sass",
+		"SCSS",
+		"Stylus",
+		"Tag",
+		"WordHighlight"
+	]
+}

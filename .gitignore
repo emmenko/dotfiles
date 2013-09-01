@@ -1,1 +1,3 @@
 .DS_Store
+.sbt/plugins/project
+.sbt/plugins/target
