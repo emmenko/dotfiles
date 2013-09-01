@@ -1,3 +1,5 @@
 .DS_Store
 .sbt/plugins/project
 .sbt/plugins/target
+Package Control.last-run
+Package Control.cache
