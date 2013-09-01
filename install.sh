@@ -40,11 +40,3 @@ done
 echo "Symlinking .sbt/plugins"
 mkdir -p ~/.sbt
 ln -sf `pwd`/.sbt/plugins ~/.sbt/plugins
-
-echo ""
-echo "Updating/installing brew formulae"
-./brew
-
-echo ""
-echo "Updating/installing npm packages"
-./npm
