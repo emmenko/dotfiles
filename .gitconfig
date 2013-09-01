@@ -1,5 +1,5 @@
 [include]
-  	path = ~/.gitconfig.local
+	path = ~/.gitconfig.local
 [user]
 	name = Nicola Molinari
 	email = nicola.molinari@commercetools.de
@@ -11,4 +11,53 @@
 [color]
 	ui = auto
 [diff]
-    renames=true
+	renames=true
+	noprefix = true # drops the annoying a/filename.foo b/filename.foo prefixes
+[merge]
+	# This is REALLY useful.  Adds 'original_version' to diffs like so:
+	# <<<<<<<
+	# OUR_VERSION
+	# |||||||
+	# ORIGNINAL_VERSION
+	# =======
+	# THEIR_VERSION
+	# >>>>>>>
+	conflictstyle = diff3
+	defaultToUpstream = true
+[core]
+	editor = vim
+[format]
+ 	pretty = fuller # more detail for "git show"
+[column]
+	# This lets "git stat" stack multiple filenames per row (like vanilla 'ls')
+	ui = always
+[alias]
+	# Fetch-Rebase: pure AWESOMEness.
+	# Fetches 'origin' and rebases the current branch on top of origin/master.
+	# Uses 'stash' intelligently to avoid blocking on trivial working-dir changes
+	frb = "! \
+		git fetch; \
+		if git diff-index --quiet --ignore-submodules HEAD --; then \
+		  git rebase origin/master \"$@\"; \
+		else \
+		  git stash save -q 'Fetch-Rebase Stashed Changes'; \
+		  git rebase origin/master \"$@\"; \
+		  git stash pop -q; \
+		fi; true"
+
+	# List files ignored by .gitignore and friends
+	show-ignored = "! \
+		git clean -ndX | \
+		perl -pe 's/Would remove/ignored:/'"
+
+	# Show recently edited files. This is being eclipsed by 'hstat'
+	recent = "! \
+		git show origin/master.. --oneline --stat=200 --color  | \
+		egrep '^ [^1-9]' | \
+		sort | \
+		column -s'|' -t"
+
+	# Short Forms
+	co = checkout
+	undo = reset HEAD~1
+	am = commit -am
