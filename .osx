@@ -14,7 +14,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "Nicola's MacBook Pro"
-sudo scutil --set HostName "Nicola's MacBook Pro"
+sudo scutil --set HostName "Nicolas-MacBook-Pro.local"
 sudo scutil --set LocalHostName "Nicolas-MacBook-Pro"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Nicolas-MacBook-Pro"
 
