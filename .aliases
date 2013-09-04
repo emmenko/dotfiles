@@ -29,6 +29,7 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias clean-ivy='rm -rf ~/.ivy2/cache/de.commercetools/* && rm -rf ~/.ivy2/local/de.commercetools/*'
 
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
