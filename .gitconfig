@@ -57,6 +57,9 @@
 		sort | \
 		column -s'|' -t"
 
+  # Show only 'my' commits
+  mine = log --all --oneline --author 'emmenko'
+
 	# Short Forms
 	st = status
 	co = checkout
