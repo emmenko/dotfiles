@@ -26,10 +26,19 @@ export PATH=$PATH:$SCALA_HOME/bin
 export MAVEN_OPTS=-Xmx512m
 
 # git autocomplete
-COMPLETION=/usr/local/etc/bash_completion.d/git-completion.bash
-if [ -f $COMPLETION ]
+GIT_COMPLETION=/usr/local/etc/bash_completion.d/git-completion.bash
+GIT_PROMPT=/usr/local/etc/bash_completion.d/git-prompt.sh
+if [ -f $GIT_COMPLETION ]
 then
-  source $COMPLETION
+  source $GIT_COMPLETION
+fi
+
+if [ -f $GIT_PROMPT ]
+then
+  source $GIT_PROMPT
+  export GIT_PS1_SHOWDIRTYSTATE=true
+  export GIT_PS1_SHOWSTASHSTATE=true
+  export GIT_PS1_SHOWUNTRACKEDFILES=true
 fi
 
 source ~/.aliases
@@ -39,3 +48,6 @@ if [ -f ~/.secrets ]
 then
   source ~/.secrets
 fi
+
+# CUSTOMIZE TERMINAL PROMPT
+export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtpur}\]$(__git_ps1 '(%s) ')\[${txtrst}\]$ "
