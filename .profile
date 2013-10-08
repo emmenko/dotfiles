@@ -37,7 +37,6 @@ if [ -f $GIT_PROMPT ]
 then
   source $GIT_PROMPT
   export GIT_PS1_SHOWDIRTYSTATE=true
-  export GIT_PS1_SHOWSTASHSTATE=true
   export GIT_PS1_SHOWUNTRACKEDFILES=true
 fi
 
@@ -50,4 +49,4 @@ then
 fi
 
 # CUSTOMIZE TERMINAL PROMPT
-export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtpur}\]$(__git_ps1 '(%s) ')\[${txtrst}\]$ "
+export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtpur}\]\$(__git_ps1 '(%s) ')\[${txtrst}\]$ "
