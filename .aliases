@@ -35,6 +35,7 @@ alias clean-ivy='rm -rf ~/.ivy2/cache/de.commercetools/* && rm -rf ~/.ivy2/local
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Git
+alias g='git'
 alias st='git status'
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -47,3 +48,6 @@ alias ps='git push'
 alias undo='git reset HEAD~1'
 alias slog='git shortlog -sn'
 alias lola='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
+
+# Autocomplete for 'g' alias as well
+complete -o default -o nospace -F _git g

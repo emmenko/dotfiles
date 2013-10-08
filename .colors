@@ -35,4 +35,3 @@ txtrst='\e[0m'    # Text Reset
 
 # CUSTOMIZE TERMINAL PROMPT
 export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtrst}\]$ "
-#export PS1="\u: \w $ "
