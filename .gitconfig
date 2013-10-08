@@ -6,13 +6,15 @@
   user = emmenko
 [branch]
   autosetuprebase = always
+  autosetupmerge = true # when branching off a remote branch, automatically let the local branch track the remote branch
 [push]
   default = current
 [color]
   ui = auto
 [diff]
-  renames=true
+  renames = copies
   noprefix = true # drops the annoying a/filename.foo b/filename.foo prefixes
+  mnemonicprefix = true # use mnemonic prefixes (index, work tree, commit, object) instead of the standard 'a' and 'b' notation
 [merge]
   # This is REALLY useful.  Adds 'original_version' to diffs like so:
   # <<<<<<<
@@ -24,6 +26,7 @@
   # >>>>>>>
   conflictstyle = diff3
   defaultToUpstream = true
+  stat = true # always show a diffstat at the end of a merge
 [core]
   editor = vim
 [format]
