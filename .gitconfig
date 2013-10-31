@@ -63,6 +63,9 @@
   # Show only 'my' commits
   mine = log --all --oneline --author 'emmenko'
 
+  # Ignore all whitespaces (useful when changing indentation)
+  diff2 = diff --ignore-space-at-eol -b -w
+
   # Short Forms
   st = status
   co = checkout
