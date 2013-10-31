@@ -40,6 +40,13 @@ then
   export GIT_PS1_SHOWUNTRACKEDFILES=true
 fi
 
+# npm autocomplete
+NPM_COMPLETION=/usr/local/etc/bash_completion.d/npm
+if [ -f $NPM_COMPLETION ]
+then
+  source $NPM_COMPLETION
+fi
+
 source ~/.aliases
 source ~/.colors
 
