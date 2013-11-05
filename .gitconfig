@@ -29,6 +29,7 @@
   stat = true # always show a diffstat at the end of a merge
 [core]
   editor = vim
+	pager = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less -+F
 [format]
   pretty = fuller # more detail for "git show"
 [column]
@@ -78,7 +79,3 @@
   ps = push
   mt = mergetool
   undo = reset HEAD~1
-[pager]
-	log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
-	show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
-	diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
