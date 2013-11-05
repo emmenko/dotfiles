@@ -78,3 +78,7 @@
   ps = push
   mt = mergetool
   undo = reset HEAD~1
+[pager]
+	log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+	show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+	diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
