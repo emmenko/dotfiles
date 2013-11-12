@@ -29,7 +29,7 @@
   stat = true # always show a diffstat at the end of a merge
 [core]
   editor = vim
-	pager = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less -+F
+	pager = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less
 [format]
   pretty = fuller # more detail for "git show"
 [column]
@@ -63,6 +63,9 @@
 
   # Show only 'my' commits
   mine = log --all --oneline --author 'emmenko'
+
+  # Show what you've done today
+  today = log --since=midnight --author='emmenko' --oneline
 
   # Ignore all whitespaces (useful when changing indentation)
   diff2 = diff --ignore-space-at-eol -b -w
