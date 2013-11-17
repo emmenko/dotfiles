@@ -11,10 +11,10 @@ then
 fi
 
 # Create ssh dir if it doesn't exist
-if [ -f '~/.ssh/' ];
+if [ ! -d '~/.ssh/' ];
 then
-  mkdir '~/.ssh/'
   echo "Creating dir ~/.ssh"
+  mkdir ~/.ssh
 fi
 
 # Create .gitconfig.local if doesn't exist
@@ -29,8 +29,11 @@ declare -a dotfiles=(.aliases .colors .gitconfig .profile .vimrc .vim .iterm2 .s
 for i in "${dotfiles[@]}"
 do
   :
-  echo "Removing symlink $i"
-  unlink ~/$i
+  if [ -L '~/$i' ];
+  then
+    echo "Removing symlink $i"
+    unlink ~/$i
+  fi
   echo "Symlinking $i"
   ln -sf `pwd`/$i ~/$i
 done
@@ -44,6 +47,7 @@ mkdir -p ~/.sbt
 rm -rf ~/.sbt/plugins
 ln -sf `pwd`/.sbt/plugins ~/.sbt/plugins
 
-echo "Symlinking sublime preferences" 
+echo "Symlinking sublime preferences"
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
 ln -sf `pwd`/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/usr/local/bin/subl
