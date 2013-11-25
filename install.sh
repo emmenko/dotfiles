@@ -25,7 +25,7 @@ then
 fi
 
 #create the symlinks for all dotfiles
-declare -a dotfiles=(.aliases .colors .gitconfig .profile .vimrc .vim .iterm2 .ssh/config)
+declare -a dotfiles=(.aliases .colors .gitconfig .profile .vimrc .vim .iterm2 .ssh/config, .gemrc)
 for i in "${dotfiles[@]}"
 do
   :
