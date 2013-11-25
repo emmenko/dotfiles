@@ -13,6 +13,8 @@ export EMAIL="nicola.molinari@commercetools.de"
 export EC2_HOME=~/.ec2
 export PATH=$PATH:$EC2_HOME/bin
 export JAVA_HOME=$(/usr/libexec/java_home)
+# use latest JRE from Oracle
+# export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 # Node.js path

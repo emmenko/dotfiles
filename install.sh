@@ -50,4 +50,10 @@ ln -sf `pwd`/.sbt/plugins ~/.sbt/plugins
 echo "Symlinking sublime preferences"
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
 ln -sf `pwd`/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
-ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/usr/local/bin/subl
+if [ -L '/usr/local/bin/subl' ];
+then
+  echo "Removing symlink /usr/local/bin/subl"
+  unlink /usr/local/bin/subl
+fi
+echo "Symlinking sublime command line"
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
