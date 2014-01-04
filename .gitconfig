@@ -15,6 +15,9 @@
   renames = copies
   noprefix = true # drops the annoying a/filename.foo b/filename.foo prefixes
   mnemonicprefix = true # use mnemonic prefixes (index, work tree, commit, object) instead of the standard 'a' and 'b' notation
+	tool = diffmerge
+[difftool "diffmerge"]
+  cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [merge]
   # This is REALLY useful.  Adds 'original_version' to diffs like so:
   # <<<<<<<
@@ -27,6 +30,10 @@
   conflictstyle = diff3
   defaultToUpstream = true
   stat = true # always show a diffstat at the end of a merge
+  tool = diffmerge
+[mergetool "diffmerge"]
+  cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+  trustExitCode = true
 [core]
   editor = vim
 	pager = `brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less
