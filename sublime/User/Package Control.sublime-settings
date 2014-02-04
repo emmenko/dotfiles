@@ -3,10 +3,12 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"Apiary.io Blueprint",
 		"Backbone.js",
 		"CoffeeScript",
 		"Cucumber",
 		"DashDoc",
+		"DocBlockr",
 		"Handlebars",
 		"Jade",
 		"JavaPropertiesEditor",
