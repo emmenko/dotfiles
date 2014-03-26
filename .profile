@@ -26,6 +26,10 @@ export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 export SCALA_HOME=/Applications/scala-2.10.2
 export PATH=$PATH:$SCALA_HOME/bin
 
+# Gatling path
+export GATLING_HOME=/Users/nicola/dev/src/gatling-charts-highcharts-2.0.0-M3a
+export PATH=$PATH:$GATLING_HOME/bin
+
 # SET MAVEN_OPTS for All Terminal Sessions
 export MAVEN_OPTS=-Xmx512m
 
