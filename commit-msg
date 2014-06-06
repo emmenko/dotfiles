@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+$regex = /([A-Z]|(\[[\w\d-]+\]))+.{4,10}/
+
+message_file = ARGV[0]
+message = File.read(message_file).strip
+
+if !$regex.match(message)
+  puts "Invalid git-commit message format. Please ensure your message starts with a capital letter (or a context form e.g.: '[mc]') and has at least 4 chars and max 100."
+  exit 1
+end
+
