@@ -1,6 +1,12 @@
 #!/usr/bin/env ruby
+#
+# Git commit-msg hook.
+#
+# It checks following syntax:
+# - starts with either a Capital letter or `[...]` (usually used to assign a context to the commit)
+# - at least 4 chars and max 100
 
-$regex = /([A-Z]|(\[[\w\d-]+\]))+.{4,10}/
+$regex = /([A-Z]|(\[[\w\d-]+\]))+.{4,100}/
 
 message_file = ARGV[0]
 message = File.read(message_file).strip
