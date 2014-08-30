@@ -21,7 +21,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+
 alias myip='ifconfig | grep "inet " | cut -d" " -f 2'
 
 # Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
+#alias whois="whois -h whois-servers.net"
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
