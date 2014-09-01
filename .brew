@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Sets your user account as the owner of the /usr/local directory to avoid managing packages with sudo
+sudo chown -R $USER /usr/local
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -17,7 +20,6 @@ brew install wget --enable-iri
 
 # Install other useful binaries
 brew install ack
-brew install git
 brew install htop-osx
 brew install jq
 brew install mongodb
