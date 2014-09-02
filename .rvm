@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# install rvm with ruby 1.9.3
+curl -sSL https://get.rvm.io | bash -s stable --ruby=1.9.3

@@ -23,4 +23,7 @@ Set up system
 
 # Install npm packages
 ./.npm
+
+# Install ruby packages
+./.rvm
 ```
