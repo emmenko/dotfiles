@@ -1,4 +1,4 @@
-export PATH=/Users/nicola:/Users/nicola/bin:/usr/local/git/bin:/usr/local/bin:$PATH
+export PATH=/Users/emmenko:/Users/emmenko/bin:/usr/local/git/bin:/usr/local/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # COMMERCETOOLS CONFIG
@@ -27,7 +27,7 @@ export SCALA_HOME=/Applications/scala-2.10.2
 export PATH=$PATH:$SCALA_HOME/bin
 
 # Gatling path
-export GATLING_HOME=/Users/nicola/dev/src/gatling-charts-highcharts-2.0.0-M3a
+export GATLING_HOME=/Users/emmenko/dev/src/gatling-charts-highcharts-2.0.0-M3a
 export PATH=$PATH:$GATLING_HOME/bin
 
 # SET MAVEN_OPTS for All Terminal Sessions
