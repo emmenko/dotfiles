@@ -48,7 +48,7 @@ rm -rf ~/.sbt/plugins
 ln -sf `pwd`/.sbt/plugins ~/.sbt/plugins
 
 echo "Symlinking sublime preferences"
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -sf `pwd`/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
 if [ -L '/usr/local/bin/subl' ];
 then
@@ -56,4 +56,4 @@ then
   unlink /usr/local/bin/subl
 fi
 echo "Symlinking sublime command line"
-ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+ln -s "/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
