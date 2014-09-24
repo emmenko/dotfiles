@@ -2,25 +2,16 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"Alignment",
-		"Apiary.io Blueprint",
-		"Backbone.js",
-		"CoffeeScript",
-		"Cucumber",
-		"DashDoc",
+		"Better CoffeeScript",
 		"DocBlockr",
 		"Handlebars",
 		"Jade",
-		"JavaPropertiesEditor",
 		"LESS",
+		"Markdown Preview",
 		"Package Control",
-		"Play 2.0",
-		"Pretty JSON",
 		"Puppet",
 		"Sass",
 		"SCSS",
-		"Stylus",
-		"Tag",
 		"WordHighlight"
 	]
 }
