@@ -1,21 +1,8 @@
 #! /bin/bash -e
 
-# OS specific stuff
-OS=`uname`
-
-if [ "$OS" == "Darwin" ]
-then
-  echo "Detected OS X"
-  echo " -> Setting defaults"
-  ./.osx
-fi
-
 # Create ssh dir if it doesn't exist
-if [ ! -d '~/.ssh/' ];
-then
-  echo "Creating dir ~/.ssh"
-  mkdir ~/.ssh
-fi
+echo "Ensure dir ~/.ssh"
+mkdir -p ~/.ssh
 
 # Create .gitconfig.local if doesn't exist
 if [ -f '~/.gitconfig.local' ];
