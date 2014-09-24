@@ -22,13 +22,13 @@ export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 # Node.js path
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 
-# Scala path
-export SCALA_HOME=/Applications/scala-2.10.2
-export PATH=$PATH:$SCALA_HOME/bin
+# # Scala path
+# export SCALA_HOME=/Applications/scala-2.10.2
+# export PATH=$PATH:$SCALA_HOME/bin
 
-# Gatling path
-export GATLING_HOME=/Users/emmenko/dev/src/gatling-charts-highcharts-2.0.0-M3a
-export PATH=$PATH:$GATLING_HOME/bin
+# # Gatling path
+# export GATLING_HOME=/Users/emmenko/dev/src/gatling-charts-highcharts-2.0.0-M3a
+# export PATH=$PATH:$GATLING_HOME/bin
 
 # SET MAVEN_OPTS for All Terminal Sessions
 export MAVEN_OPTS=-Xmx512m
