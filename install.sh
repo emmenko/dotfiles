@@ -29,10 +29,10 @@ done
 # rm -rf ~/bin
 # ln -sf `pwd`/bin/ ~/bin
 
-echo "Symlinking .sbt/plugins"
-mkdir -p ~/.sbt
-rm -rf ~/.sbt/plugins
-ln -sf `pwd`/.sbt/plugins ~/.sbt/plugins
+echo "Symlinking .sbt/0.13/plugins"
+rm -rf ~/.sbt/0.13
+mkdir -p ~/.sbt/0.13
+ln -sf `pwd`/.sbt/0.13/plugins ~/.sbt/0.13/plugins
 
 echo "Symlinking sublime preferences"
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
