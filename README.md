@@ -15,13 +15,16 @@ brew install node
 
 Set up system
 ```bash
-# Set up custom OSX preferences, symlink dotfiles
+# Set up custom OSX preferences
+./.osx
+
+# Symlink dotfiles
 ./install.sh
 
 # Update/Install brew formulae
 ./.brew
 
-# Install npm packages
+# Update/Install npm packages
 ./.npm
 
 # Install ruby packages
