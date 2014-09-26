@@ -5,7 +5,6 @@
 	"ignored_packages":
 	[
 		"SCSS",
-		"Better CoffeeScript",
 		"Vintage"
 	],
 	"tab_size": 2,
