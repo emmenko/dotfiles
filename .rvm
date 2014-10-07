@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+# ensure to install apple gcc (since it's removed from xcode tools from Mavericks)
+brew install homebrew/dupes/apple-gcc42
 # install rvm with ruby 1.9.3
 curl -sSL https://get.rvm.io | bash -s stable --ruby=1.9.3

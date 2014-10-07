@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Useful links:
+# - https://www.new-bamboo.co.uk/blog/2013/10/24/3-quick-tips-for-coding-with-os-x-10-9-mavericks/
+
 # Sets your user account as the owner of the /usr/local directory to avoid managing packages with sudo
 sudo chown -R $USER /usr/local
 

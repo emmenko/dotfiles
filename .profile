@@ -65,3 +65,5 @@ fi
 
 # CUSTOMIZE TERMINAL PROMPT
 export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtpur}\]\$(__git_ps1 '(%s) ')\[${txtrst}\]$ "
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
