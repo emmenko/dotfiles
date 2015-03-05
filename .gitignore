@@ -1,5 +1,6 @@
 .DS_Store
-.sbt/plugins/project
-.sbt/plugins/target
+.sbt/**/project
+.sbt/**/target
 Package Control.last-run
 Package Control.cache
+GoSublime

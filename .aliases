@@ -10,6 +10,7 @@ alias h="history"
 alias top='top -o cpu'
 alias jsonpretty='python -mjson.tool'
 alias reload='source ~/.profile'
+alias golang='/usr/local/go/bin/go'
 
 # List all files colorized in long format, including dot files
 alias ll='ls -alFhG'
@@ -33,6 +34,9 @@ alias clean-ivy='rm -rf ~/.ivy2/cache/de.commercetools/* && rm -rf ~/.ivy2/local
 
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
+
+# Start sbt with Java 1.7
+alias sbt17='sbt -java-home /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home'
 
 # Git
 alias g='git'

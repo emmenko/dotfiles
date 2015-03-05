@@ -3,15 +3,24 @@
 	"installed_packages":
 	[
 		"Better CoffeeScript",
+		"Cucumber",
 		"DocBlockr",
+		"GoSublime",
 		"Handlebars",
 		"Jade",
 		"LESS",
 		"Markdown Preview",
 		"Package Control",
 		"Puppet",
+		"ReactJS",
 		"Sass",
 		"SCSS",
+		"SublimeSBT",
+		"Theme - Asphalt",
+		"Theme - Brogrammer",
+		"Theme - Flatland",
+		"Theme - itg.flat",
+		"Theme - Spacegray",
 		"WordHighlight"
 	]
 }

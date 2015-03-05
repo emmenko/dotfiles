@@ -1,13 +1,14 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"detect_indentation": false,
 	"font_size": 20.0,
 	"ignored_packages":
 	[
-		"SCSS",
-		"Vintage"
+		"Vintage",
+		"SCSS"
 	],
 	"tab_size": 2,
+	"theme": "Brogrammer.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
