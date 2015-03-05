@@ -1,12 +1,19 @@
 {
 	"auto_upgrade_last_run": null,
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"Babel",
 		"Better CoffeeScript",
 		"Cucumber",
 		"DocBlockr",
-		"GoSublime",
 		"Handlebars",
 		"Jade",
 		"LESS",
@@ -16,7 +23,8 @@
 		"ReactJS",
 		"Sass",
 		"SCSS",
-		"SublimeLinter-jsxhint",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"SublimeSBT",
 		"Theme - Asphalt",
 		"Theme - Brogrammer",

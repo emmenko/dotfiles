@@ -28,7 +28,7 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
 
 # Golang path
-export GOPATH=/$HOME/go
+export GOPATH=$HOME/go
 
 # # Scala path
 # export SCALA_HOME=/Applications/scala-2.10.2
