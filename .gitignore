@@ -1,4 +1,5 @@
 .DS_Store
+npm-debug.log
 .sbt/**/project
 .sbt/**/target
 Package Control.last-run
