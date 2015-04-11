@@ -3,11 +3,6 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
 		"Babel",
@@ -18,9 +13,9 @@
 		"Jade",
 		"LESS",
 		"Markdown Preview",
+		"Oceanic Next Color Scheme",
 		"Package Control",
 		"Puppet",
-		"ReactJS",
 		"Sass",
 		"SCSS",
 		"SublimeLinter",
