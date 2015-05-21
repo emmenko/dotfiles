@@ -30,6 +30,9 @@ export DOCKER_HOST=tcp://192.168.59.103:2376
 # Golang path
 export GOPATH=$HOME/go
 
+# NVM setup
+source $(brew --prefix nvm)/nvm.sh
+
 # # Scala path
 # export SCALA_HOME=/Applications/scala-2.10.2
 # export PATH=$PATH:$SCALA_HOME/bin
