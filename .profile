@@ -25,7 +25,7 @@ export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 # Boot2Docker (connect the Docker client to the Docker daemon)
 export DOCKER_CERT_PATH=/Users/emmenko/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.104:2376
+export DOCKER_HOST=tcp://192.168.59.103:2376
 
 # Golang path
 export GOPATH=$HOME/go
