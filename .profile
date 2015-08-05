@@ -12,9 +12,9 @@ export EMAIL="nicola.molinari@commercetools.de"
 # Setup Amazon EC2 Command-Line Tools
 export EC2_HOME=~/.ec2
 export PATH=$PATH:$EC2_HOME/bin
-# export JAVA_HOME=$(/usr/libexec/java_home)
-# switch to JAVA 1.6
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+export JAVA_HOME=$(/usr/libexec/java_home)
+# switch to JAVA 1.7
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 # use latest JRE from Oracle
 # export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 export EC2_URL=https://ec2.eu-west-1.amazonaws.com
@@ -25,7 +25,7 @@ export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 # Boot2Docker (connect the Docker client to the Docker daemon)
 export DOCKER_CERT_PATH=/Users/emmenko/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_HOST=tcp://192.168.59.104:2376
 
 # Golang path
 export GOPATH=$HOME/go
