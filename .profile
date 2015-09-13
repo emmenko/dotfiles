@@ -23,9 +23,16 @@ export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 
 # Boot2Docker (connect the Docker client to the Docker daemon)
-export DOCKER_CERT_PATH=/Users/emmenko/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
+#export DOCKER_CERT_PATH=/Users/emmenko/.boot2docker/certs/boot2docker-vm
+#export DOCKER_TLS_VERIFY=1
+#export DOCKER_HOST=tcp://192.168.59.103:2376
+
+# Docker-machine (default environment to 'dev')
+eval "$(docker-machine env dev)"
+
+# Kubernetes
+export KUBERNETES_PROVIDER=vagrant
+export NUM_MINIONS=2
 
 # Golang path
 export GOPATH=$HOME/go
@@ -75,6 +82,6 @@ then
 fi
 
 # CUSTOMIZE TERMINAL PROMPT
-export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtpur}\]\$(__git_ps1 '(%s) ')\[${txtrst}\]$ "
+export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtpur}\]\$(__git_ps1 '(%s)')\n\[${txtrst}\]$ "
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

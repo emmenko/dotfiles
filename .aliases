@@ -55,3 +55,7 @@ alias lola='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 
 # Autocomplete for 'g' alias as well
 complete -o default -o nospace -F _git g
+
+# Docker
+alias dmenv_dev='eval "$(docker-machine env dev)"'
+alias dmenv_mc-legacy='eval "$(docker-machine env mc-legacy)"'
