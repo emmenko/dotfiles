@@ -11,6 +11,11 @@
                 "@disable": false,
                 "args": [],
                 "excludes": []
+            },
+            "stylelint": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
             }
         },
         "mark_style": "outline",

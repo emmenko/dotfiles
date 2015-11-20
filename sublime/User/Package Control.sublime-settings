@@ -1,5 +1,6 @@
 {
 	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -20,6 +21,7 @@
 		"SCSS",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-stylelint",
 		"Theme - Asphalt",
 		"Theme - Brogrammer",
 		"Theme - Flatland",

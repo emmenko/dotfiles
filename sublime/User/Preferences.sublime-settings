@@ -4,8 +4,8 @@
 	"font_size": 20.0,
 	"ignored_packages":
 	[
-		"Vintage",
-		"SCSS"
+		"SCSS",
+		"Vintage"
 	],
 	"tab_size": 2,
 	"theme": "Brogrammer.sublime-theme",
