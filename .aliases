@@ -6,6 +6,7 @@ alias s="subl"
 alias o="open"
 alias oo="open ."
 alias g="git"
+alias cz="git cz"
 alias h="history"
 alias top='top -o cpu'
 alias jsonpretty='python -mjson.tool'
