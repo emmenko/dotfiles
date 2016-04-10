@@ -4,6 +4,7 @@
   name = Nicola Molinari
   email = nicola.molinari@commercetools.de
   user = emmenko
+  signingkey = 92360DE0
 [branch]
   autosetuprebase = always
   autosetupmerge = true # when branching off a remote branch, automatically let the local branch track the remote branch
@@ -89,3 +90,5 @@
   ps = push
   mt = mergetool
   undo = reset HEAD~1
+[commit]
+  gpgsign = true
