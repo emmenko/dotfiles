@@ -3,6 +3,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Cucumber",
+		"Puppet"
 	],
 	"installed_packages":
 	[

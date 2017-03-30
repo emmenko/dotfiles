@@ -37,8 +37,12 @@ export NUM_MINIONS=2
 # Golang path
 export GOPATH=$HOME/go
 
+# Yarn path
+export PATH="$PATH:$HOME/.yarn/bin"
+
 # NVM setup
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="/Users/emmenko/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # # Scala path
 # export SCALA_HOME=/Applications/scala-2.10.2
@@ -85,3 +89,11 @@ fi
 export PS1="\[${txtylw}\]\u: \[${txtblu}\]\w \[${txtpur}\]\$(__git_ps1 '(%s)')\n\[${txtrst}\]$ "
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/emmenko/dev/google-cloud-sdk/path.bash.inc' ]; then source '/Users/emmenko/dev/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/emmenko/dev/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/emmenko/dev/google-cloud-sdk/completion.bash.inc'; fi
