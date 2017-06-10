@@ -21,8 +21,6 @@
 	"font_size": 20.0,
 	"ignored_packages":
 	[
-		"Cucumber",
-		"Puppet",
 		"SCSS",
 		"Vintage"
 	],

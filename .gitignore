@@ -8,3 +8,5 @@ Package Control.cache
 GoSublime
 SublimeLinter
 .vim/bundle
+.iterm2
+!.iterm2/*.plist

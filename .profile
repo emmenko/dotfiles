@@ -44,6 +44,9 @@ export PATH="$PATH:$HOME/.yarn/bin"
 export NVM_DIR="/Users/emmenko/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# Fastlane setup (iOS)
+export PATH="$HOME/.fastlane/bin:$PATH"
+
 # # Scala path
 # export SCALA_HOME=/Applications/scala-2.10.2
 # export PATH=$PATH:$SCALA_HOME/bin
