@@ -80,6 +80,9 @@ then
   source $NPM_COMPLETION
 fi
 
+# kubectl autocomplete
+source <(kubectl completion bash)
+
 source ~/.aliases
 source ~/.colors
 
