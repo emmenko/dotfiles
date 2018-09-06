@@ -24,12 +24,8 @@ brew install wget --enable-iri
 # Install other useful binaries
 brew install ack
 brew install htop-osx
-brew install jq
-brew install mongodb
-brew install openssl
-brew install rhino
-brew install sbt
-brew install ngrep
+brew install kubectx kubernetes-cli kubernetes-helm
+brew install node yarn
 
 # Install bash-completion
 brew install git bash-completion

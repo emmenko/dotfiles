@@ -1,4 +1,5 @@
 export PATH=/Users/emmenko:/Users/emmenko/bin:/usr/local/git/bin:/usr/local/bin:$PATH
+# export PATH="/usr/local/opt/node@8/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # COMMERCETOOLS CONFIG
@@ -10,14 +11,14 @@ export GIT_COMMITTER_EMAIL="nicola.molinari@commercetools.de"
 export EMAIL="nicola.molinari@commercetools.de"
 
 # Setup Amazon EC2 Command-Line Tools
-export EC2_HOME=~/.ec2
-export PATH=$PATH:$EC2_HOME/bin
+# export EC2_HOME=~/.ec2
+# export PATH=$PATH:$EC2_HOME/bin
 export JAVA_HOME=$(/usr/libexec/java_home)
 # switch to JAVA 1.7
 # export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 # use latest JRE from Oracle
 # export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-export EC2_URL=https://ec2.eu-west-1.amazonaws.com
+# export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 # Node.js path
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
@@ -39,10 +40,6 @@ export GOPATH=$HOME/go
 
 # Yarn path
 export PATH="$PATH:$HOME/.yarn/bin"
-
-# NVM setup
-export NVM_DIR="/Users/emmenko/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Fastlane setup (iOS)
 export PATH="$HOME/.fastlane/bin:$PATH"
@@ -103,3 +100,6 @@ if [ -f '/Users/emmenko/dev/google-cloud-sdk/path.bash.inc' ]; then source '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/emmenko/dev/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/emmenko/dev/google-cloud-sdk/completion.bash.inc'; fi
+
+# OPAM configuration
+. /Users/emmenko/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
