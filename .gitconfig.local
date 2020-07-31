@@ -1,5 +1,6 @@
 [github]
 	user =
 	token =
-[credential]
-	helper = osxkeychain
+[user]
+  email =
+  signingkey =

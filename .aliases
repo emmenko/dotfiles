@@ -34,7 +34,7 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias clean-ivy='rm -rf ~/.ivy2/cache/de.commercetools/* && rm -rf ~/.ivy2/local/de.commercetools/*'
 
 # Make Grunt print stack traces by default
-command -v grunt > /dev/null && alias grunt="grunt --stack"
+#command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Start sbt with Java 1.7
 alias sbt17='sbt -java-home /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home'
@@ -55,8 +55,4 @@ alias slog='git shortlog -sn'
 alias lola='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 
 # Autocomplete for 'g' alias as well
-complete -o default -o nospace -F _git g
-
-# Docker
-alias dmenv_dev='eval "$(docker-machine env dev)"'
-alias dmenv_mc-legacy='eval "$(docker-machine env mc-legacy)"'
+#complete -o default -o nospace -F _git g

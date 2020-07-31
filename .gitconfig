@@ -2,9 +2,11 @@
   path = ~/.gitconfig.local
 [user]
   name = Nicola Molinari
-  email = nicola.molinari@commercetools.de
   user = emmenko
-  signingkey = DE4C0A2B
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[credential]
+	helper = osxkeychain
 [branch]
   autosetuprebase = always
   autosetupmerge = true # when branching off a remote branch, automatically let the local branch track the remote branch
