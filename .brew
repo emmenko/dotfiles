@@ -12,20 +12,26 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-# Install wget with IRI support
-brew install wget --enable-iri
-
 # Install more recent versions of some OS X tools
 # brew tap homebrew/dupes
 # brew install homebrew/dupes/grep
 # brew tap josegonzalez/homebrew-php
 # brew install php55
 
+brew install zsh-syntax-highlighting
+brew install tfswitch
+brew install fnm
+
 # Install other useful binaries
+brew install wget
 brew install ack
 brew install htop-osx
-brew install kubectx kubernetes-cli kubernetes-helm
-brew install node yarn
+brew install helm@2
+brew install kubectx kubernetes-cli
+brew install yarn
+
+# Install krew
+# https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 
 # Install bash-completion
 brew install git bash-completion

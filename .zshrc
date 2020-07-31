@@ -192,6 +192,9 @@ export PATH="$PATH:/Users/emmenko/Library/Python/2.7/bin/"
 # Helm@2 path
 export PATH="/usr/local/opt/helm@2/bin:$PATH"
 
+# Krew path
+export PATH="${PATH}:${HOME}/.krew/bin"
+
 # # Scala path
 # export SCALA_HOME=/Applications/scala-2.10.2
 # export PATH=$PATH:$SCALA_HOME/bin
